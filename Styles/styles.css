@@ -114,27 +114,6 @@ a:focus { outline: 2px dashed black; outline-offset: 4px; }
 
 footer { background-color: var(--dark-bg); text-align: center; padding: 24px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.07); }
 
-.card { background-color: var(--text-color); border-radius: 8px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); max-width: 400px; margin: 20px auto; padding: 15px; text-align: center; }
-.card img { max-width: 100%; border-radius: 4px; display: block; margin: 0 auto 10px auto; }
-.card p { font-size: 14px; color: var(--accent-color); margin: 0; }
-.lists-wrapper { display: flex; justify-content: space-between; max-width: 800px; margin: 40px auto; }
-.lists-wrapper > div { width: 45%; background-color: var(--text-color); padding: 20px 40px; border-radius: 8px; box-sizing: border-box; }
-table { margin: 20px auto; width: 80%; border-collapse: collapse; color: var(--text-color); }
-th, td { border: 1px solid var(--accent-color); padding: 12px; text-align: center; }
-hr { width: 80%; margin: 40px auto; border: 0; border-top: 2px dashed var(--accent-color); }
-
-@media (min-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
-    h3 { font-size: 1.2rem; }
-    .hero-text h1 { font-size: 3rem; }
-    .hero-content { flex-direction: row; text-align: left; gap: 60px; }
-    .hero-photo { width: 220px; height: 220px; }
-    .hero-text { text-align: left; }
-    .container-main { width: 80%; padding: 0; }
-    .about-grid { grid-template-columns: 3fr 2fr; }
-    .projects-grid { grid-template-columns: repeat(2, 1fr); }
-}
 
 .certs-grid {
     display: grid;
@@ -211,4 +190,17 @@ hr { width: 80%; margin: 40px auto; border: 0; border-top: 2px dashed var(--acce
     color: var(--text-muted);
     margin-top: 4px;
     font-style: italic;
+}
+
+@media (min-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.2rem; }
+    .hero-text h1 { font-size: 3rem; }
+    .hero-content { flex-direction: row; text-align: left; gap: 60px; }
+    .hero-photo { width: 220px; height: 220px; }
+    .hero-text { text-align: left; }
+    .container-main { width: 80%; padding: 0; }
+    .about-grid { grid-template-columns: 3fr 2fr; }
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
 }

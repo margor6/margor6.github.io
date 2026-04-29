@@ -1,16 +1,14 @@
 $(document).ready(function() {
     
-    // 1. Animacja wejściowa Hero (Fade-in)
-    // Ponieważ h1 jest widoczne z poziomu CSS, najpierw je ukrywamy, a potem płynnie pokazujemy.
+    // 1. Hero (Fade-in)
     $('.hero-text h1').hide().fadeIn(2000);
 
 
 
 
 
-    // 3. Obsługa przycisku "Powrót na górę"
+    // 2. "back to top"
     $(window).scroll(function() {
-        // Jeśli zjechaliśmy o więcej niż 300 pikseli w dół
         if ($(this).scrollTop() > 300) {
             $('#back-to-top').fadeIn();
         } else {
@@ -18,7 +16,6 @@ $(document).ready(function() {
         }
     });
 
-    // Kliknięcie w przycisk zabiera na samą górę sekcji Hero
     $('#back-to-top').click(function() {
         $('html, body').animate({
             // Przewijamy do górnej krawędzi elementu #hero
